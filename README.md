@@ -12,15 +12,15 @@
 
 1. File → New → Targeを選択
 
-<img src="1.png" width="500"/>
+<img src="Screenshots/1.png" width="500"/>
 
 2. Framework & Library → Frameworkを選択
 
-<img src="2.png" width="500"/>
+<img src="Screenshots/2.png" width="500"/>
 
 3. プロジェクト設定 → General → TARGETを選択 →　Frameworks and Libraries → 依存するFrameworkを選択
 
-<img src="3.png" width="500"/>
+<img src="Screenshots/3.png" width="500"/>
 
 ## 備考
 
