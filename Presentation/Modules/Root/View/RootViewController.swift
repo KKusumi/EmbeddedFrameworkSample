@@ -10,6 +10,6 @@ import UIKit
 
 protocol RootView {}
 
-final class RootViewController: UITabBarController {
+final class RootViewController: UIViewController {
     var viewModel: RootViewModelType!
 }

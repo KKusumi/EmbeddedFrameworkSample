@@ -7,16 +7,28 @@
 
 import Foundation
 import UIKit
+import Infra
 
 protocol TransitToRootWireframe: AnyObject {
     func showRoot()
 }
 
 extension TransitToRootWireframe {
-    
     func showRoot() {
-        let rootViewController = RootBuilder.build()
-        if let window = UIApplication.shared.applicationWindow
+        if let window = EmbeddedFrameworkSample.shared.applicationWindow {
+            UIView.transition(
+                with: window,
+                duration: 0.5,
+                options: .transitionCrossDissolve,
+                animations: nil,
+                completion: nil
+            )
+        }
     }
-    
+}
+
+protocol RootWireframe: class {}
+
+final class RootWireframeImpl: RootWireframe {
+    weak var viewController: UIViewController?
 }

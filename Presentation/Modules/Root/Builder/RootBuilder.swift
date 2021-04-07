@@ -8,12 +8,17 @@
 import Foundation
 import UIKit
 
-enum RootBuilder {
-    static func build() -> UIViewController {
+public enum RootBuilder {
+    public static func build() -> UIViewController {
         let viewController = RootViewController.instantiate()
         let wireframe = RootWireframeImpl()
-        let viewModel = 
         
-        viewController.viewModel =
+        wireframe.viewController = viewController
+        
+        let _viewModel = RootViewModel()
+        
+        viewController.viewModel = _viewModel
+        
+        return viewController
     }
 }

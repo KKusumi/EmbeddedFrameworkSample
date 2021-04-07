@@ -14,7 +14,13 @@
 		1A17092C2619F75800A1BD71 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A17092B2619F75800A1BD71 /* RootViewController.storyboard */; };
 		1A1709302619F76E00A1BD71 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17092F2619F76E00A1BD71 /* RootViewController.swift */; };
 		1A1709342619F81800A1BD71 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1709332619F81800A1BD71 /* RootViewModel.swift */; };
-		1A17093A2619FAC100A1BD71 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1709392619FAC100A1BD71 /* UIViewController.swift */; };
+		1A17093A2619FAC100A1BD71 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1709392619FAC100A1BD71 /* UIViewController+.swift */; };
+		1A170948261A01A800A1BD71 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A170946261A01A800A1BD71 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A17094B261A01A800A1BD71 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A170944261A01A800A1BD71 /* Infra.framework */; };
+		1A17094C261A01A800A1BD71 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A170944261A01A800A1BD71 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A170954261A01D500A1BD71 /* EmbeddedFrameworkSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A170953261A01D500A1BD71 /* EmbeddedFrameworkSample.swift */; };
+		1A170958261A02BE00A1BD71 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A170944261A01A800A1BD71 /* Infra.framework */; };
+		1A170959261A02BE00A1BD71 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A170944261A01A800A1BD71 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A69155A2601EB7000812DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6915592601EB7000812DB7 /* AppDelegate.swift */; };
 		1A69155C2601EB7000812DB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69155B2601EB7000812DB7 /* SceneDelegate.swift */; };
 		1A69155E2601EB7000812DB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A69155D2601EB7000812DB7 /* ViewController.swift */; };
@@ -37,6 +43,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1A170949261A01A800A1BD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A69154E2601EB7000812DB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A170943261A01A800A1BD71;
+			remoteInfo = Infra;
+		};
+		1A17095A261A02BE00A1BD71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A69154E2601EB7000812DB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A170943261A01A800A1BD71;
+			remoteInfo = Infra;
+		};
 		1A6915782601EE8400812DB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A69154E2601EB7000812DB7 /* Project object */;
@@ -68,6 +88,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1A17095C261A02BE00A1BD71 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A170959261A02BE00A1BD71 /* Infra.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A69157F2601EE8400812DB7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,6 +108,7 @@
 				1A69158E2601EEF800812DB7 /* Domain.framework in Embed Frameworks */,
 				1A69157B2601EE8400812DB7 /* Data.framework in Embed Frameworks */,
 				1A6915BC2601F42100812DB7 /* Presentation.framework in Embed Frameworks */,
+				1A17094C261A01A800A1BD71 /* Infra.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +134,11 @@
 		1A17092B2619F75800A1BD71 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
 		1A17092F2619F76E00A1BD71 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		1A1709332619F81800A1BD71 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		1A1709392619FAC100A1BD71 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		1A1709392619FAC100A1BD71 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		1A170944261A01A800A1BD71 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A170946261A01A800A1BD71 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
+		1A170947261A01A800A1BD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A170953261A01D500A1BD71 /* EmbeddedFrameworkSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedFrameworkSample.swift; sourceTree = "<group>"; };
 		1A6915562601EB7000812DB7 /* EmbeddedFrameworkSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbeddedFrameworkSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6915592601EB7000812DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A69155B2601EB7000812DB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +161,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A170941261A01A800A1BD71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A6915532601EB7000812DB7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +175,7 @@
 				1A69158D2601EEF800812DB7 /* Domain.framework in Frameworks */,
 				1A69157A2601EE8400812DB7 /* Data.framework in Frameworks */,
 				1A6915BB2601F42100812DB7 /* Presentation.framework in Frameworks */,
+				1A17094B261A01A800A1BD71 /* Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A170958261A02BE00A1BD71 /* Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,9 +291,19 @@
 		1A1709382619FAAB00A1BD71 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				1A1709392619FAC100A1BD71 /* UIViewController.swift */,
+				1A1709392619FAC100A1BD71 /* UIViewController+.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		1A170945261A01A800A1BD71 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				1A170946261A01A800A1BD71 /* Infra.h */,
+				1A170947261A01A800A1BD71 /* Info.plist */,
+				1A170953261A01D500A1BD71 /* EmbeddedFrameworkSample.swift */,
+			);
+			path = Infra;
 			sourceTree = "<group>";
 		};
 		1A69154D2601EB7000812DB7 = {
@@ -258,6 +313,7 @@
 				1A6915742601EE8400812DB7 /* Data */,
 				1A6915872601EEF800812DB7 /* Domain */,
 				1A6915B52601F42100812DB7 /* Presentation */,
+				1A170945261A01A800A1BD71 /* Infra */,
 				1A6915572601EB7000812DB7 /* Products */,
 				1A69159F2601F10000812DB7 /* Frameworks */,
 			);
@@ -270,6 +326,7 @@
 				1A6915732601EE8400812DB7 /* Data.framework */,
 				1A6915862601EEF800812DB7 /* Domain.framework */,
 				1A6915B42601F42100812DB7 /* Presentation.framework */,
+				1A170944261A01A800A1BD71 /* Infra.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,6 +413,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1A17093F261A01A800A1BD71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A170948261A01A800A1BD71 /* Infra.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A69156E2601EE8400812DB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +448,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1A170943261A01A800A1BD71 /* Infra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A17094D261A01A800A1BD71 /* Build configuration list for PBXNativeTarget "Infra" */;
+			buildPhases = (
+				1A17093F261A01A800A1BD71 /* Headers */,
+				1A170940261A01A800A1BD71 /* Sources */,
+				1A170941261A01A800A1BD71 /* Frameworks */,
+				1A170942261A01A800A1BD71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infra;
+			productName = Infra;
+			productReference = 1A170944261A01A800A1BD71 /* Infra.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1A6915552601EB7000812DB7 /* EmbeddedFrameworkSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A69156A2601EB7200812DB7 /* Build configuration list for PBXNativeTarget "EmbeddedFrameworkSample" */;
@@ -398,6 +481,7 @@
 				1A6915792601EE8400812DB7 /* PBXTargetDependency */,
 				1A69158C2601EEF800812DB7 /* PBXTargetDependency */,
 				1A6915BA2601F42100812DB7 /* PBXTargetDependency */,
+				1A17094A261A01A800A1BD71 /* PBXTargetDependency */,
 			);
 			name = EmbeddedFrameworkSample;
 			productName = EmbeddedFrameworkSample;
@@ -450,10 +534,12 @@
 				1A6915B02601F42100812DB7 /* Sources */,
 				1A6915B12601F42100812DB7 /* Frameworks */,
 				1A6915B22601F42100812DB7 /* Resources */,
+				1A17095C261A02BE00A1BD71 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A17095B261A02BE00A1BD71 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -469,6 +555,10 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					1A170943261A01A800A1BD71 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
 					1A6915552601EB7000812DB7 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -503,11 +593,19 @@
 				1A6915852601EEF800812DB7 /* Domain */,
 				1A6915722601EE8400812DB7 /* Data */,
 				1A6915B32601F42100812DB7 /* Presentation */,
+				1A170943261A01A800A1BD71 /* Infra */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A170942261A01A800A1BD71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A6915542601EB7000812DB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +641,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A170940261A01A800A1BD71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A170954261A01D500A1BD71 /* EmbeddedFrameworkSample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A6915522601EB7000812DB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -573,7 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A17093A2619FAC100A1BD71 /* UIViewController.swift in Sources */,
+				1A17093A2619FAC100A1BD71 /* UIViewController+.swift in Sources */,
 				1A1709302619F76E00A1BD71 /* RootViewController.swift in Sources */,
 				1A1709172619F44D00A1BD71 /* HomeBuilder.swift in Sources */,
 				1A17091B2619F46700A1BD71 /* HomeWireframe.swift in Sources */,
@@ -586,6 +692,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1A17094A261A01A800A1BD71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A170943261A01A800A1BD71 /* Infra */;
+			targetProxy = 1A170949261A01A800A1BD71 /* PBXContainerItemProxy */;
+		};
+		1A17095B261A02BE00A1BD71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A170943261A01A800A1BD71 /* Infra */;
+			targetProxy = 1A17095A261A02BE00A1BD71 /* PBXContainerItemProxy */;
+		};
 		1A6915792601EE8400812DB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1A6915722601EE8400812DB7 /* Data */;
@@ -628,6 +744,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1A17094E261A01A800A1BD71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.embedded-framework-sample.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A17094F261A01A800A1BD71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Infra/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.embedded-framework-sample.Infra";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1A6915682601EB7200812DB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -950,6 +1121,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A17094D261A01A800A1BD71 /* Build configuration list for PBXNativeTarget "Infra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A17094E261A01A800A1BD71 /* Debug */,
+				1A17094F261A01A800A1BD71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1A6915512601EB7000812DB7 /* Build configuration list for PBXProject "EmbeddedFrameworkSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

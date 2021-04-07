@@ -17,12 +17,17 @@
 		<key>EmbeddedFrameworkSample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+		<key>Infra.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Presentation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
